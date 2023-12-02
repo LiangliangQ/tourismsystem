@@ -1,0 +1,126 @@
+* {
+    outline: none;
+    /* 输入框点击后没有默认框 */
+    user-select: none;
+    /* 不能选中文本 */
+    margin: 0;
+    padding: 0;
+    /* 去掉默认的外边距和内边距 */
+    box-sizing: border-box;
+    /* 让盒子的宽度和内容保持一致 */
+}
+
+body {
+    background-image: url(../image/microsoft-windows-7680x4320.jpg);
+    background-size: cover;
+    /* 让背景图片充满整个页面 */
+    background-attachment: fixed;
+    /* 让背景图片固定不动 */
+}
+
+.div1 {
+    display: flex;
+    justify-content: center;
+    /* 让水平方向居中 */
+    align-items: center;
+    /* 让垂直方向居中 */
+    height: 100vh;
+    /* 让页面高度为100vh */
+}
+
+form {
+    background-color: rgba(255, 255, 255, .3);
+    width: 400px;
+    /* height: 400px; */
+    border-radius: 30px;
+    /* 背景半透明，设置宽高，让盒子圆角 */
+
+    backdrop-filter: blur(3px);
+    /* 模糊 */
+    border-left: 2px solid rgba(255, 255, 255, .3);
+    border-top: 2px solid rgba(255, 255, 255, .3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .2);
+    /* 阴影 */
+    text-align: center;
+    /* 让文本居中 */
+}
+
+.tittle {
+    margin: 20px;
+
+    font-weight: 400;
+    font-size: 50px;
+    color: rgb(27, 27, 27);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+
+    opacity: 0.8;
+    /* 透明度 */
+}
+
+.select1 {
+    border: none;
+    width: 80%;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    background-color: transparent;
+    /* 背景半透明，设置宽高，让盒子圆角 */
+    color: rgb(27, 27, 27);
+    border-left: 2px solid rgba(255, 255, 255, .3);
+    border-top: 2px solid rgba(255, 255, 255, .3);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+}
+
+.input1 {
+    border: none;
+    width: 80%;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    background-color: transparent;
+    color: white;
+    /* 只能控制输入的文本的颜色 */
+    border-left: 2px solid rgba(255, 255, 255, .3);
+    border-top: 2px solid rgba(255, 255, 255, .3);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+}
+
+.input2 {
+    border: none;
+    width: 80%;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    background-color: transparent;
+    color: rgb(27, 27, 27);
+    font-weight: 800;
+    border-left: 2px solid rgba(255, 255, 255, .3);
+    border-top: 2px solid rgba(255, 255, 255, .3);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+::placeholder {
+    color: rgb(27, 27, 27);
+    opacity: 0.8;
+}
+
+/* 用来控制 input1 的 placeholder 默认提示字的颜色 */
+
+input:focus {
+    border: none;
+    background-color: rgba(255, 255, 255, .1);
+
+    border-right: 2px solid rgba(255, 255, 255, .3);
+    border-bottom: 2px solid rgba(255, 255, 255, .3);
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .2);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+}
+
+/* 当 input1 被选中时，让其背景色变为透明度为.1 的透明色 */
